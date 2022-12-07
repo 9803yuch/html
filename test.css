@@ -1,0 +1,65 @@
+body{
+    margin:0;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr ;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    /* grid areas beskriver hur innehållet ska visas på sidan */
+    grid-gap:0.2rem;
+    
+}
+
+nav{
+    background-color: aqua;
+    grid-area: nav;
+    /* när man har skrivit temelete-areas i container då kan man lägga till grid-area i var sin taggen */
+}
+
+main{
+    background-color: aquamarine;
+    grid-area:main;
+}
+
+#sidebar{
+    background-color: cadetblue;
+    grid-area: sidebar;
+}
+
+#content1{
+    background-color: lightblue;
+    grid-area:content1;
+}
+
+#content2{
+    background-color: pink;
+    grid-area:content2;
+}
+
+#content3{
+    background-color:darkseagreen;
+    grid-area:content3;
+}
+
+footer{
+    background-color: blue;
+    grid-area:footer;
+}
+
+
+
+
+
+
+    
+
+
+
+

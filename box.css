@@ -1,0 +1,61 @@
+/* träning om element*/
+
+p{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.font-size p{
+    font-size: 30px;
+}
+
+.container{
+    background-color: aqua;
+}
+
+.container .box{
+    background-color: blue;
+}
+.container > .box1{
+    background-color: pink;
+}
+/*träning om element slutar.*/
+
+.ruta {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: ruta;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: 3;
+      }
+      
+     
+      @keyframes ruta {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
+
+      .flex-box{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        margin:30px;
+        width:100px;
+        height:100px;
+       
+      }
+
+      .flex-box > div{
+        font-size:30px;
+        margin:20px;
+        padding:40px;
+        background-color: blue;
+        border:3px solid darkblue;
+        border-radius: 60%; 
+      }
